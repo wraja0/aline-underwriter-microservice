@@ -37,7 +37,7 @@ class SmokeTest {
     void usingCorrectVersions() {
         assertNotNull(SpringVersion.getVersion());
         assertTrue(SpringVersion.getVersion().startsWith("5"));
-        assertEquals("1.8", JavaVersion.getJavaVersion().toString());
+        assertEquals("16", JavaVersion.getJavaVersion().toString());
     }
 
 }
