@@ -6,15 +6,15 @@ spring:
     name: "underwriter-microservice"
   jpa:
     hibernate:
+      dialect: org.hibernate.dialect.MYSQL5lnnoDBDIalect
       ddl-auto: create
 
     show-sql: true
     database-platform: "org.hibernate.dialect.H2Dialect"
   datasource:
-    username: "sa"
-    password: ""
-    url: "jdbc:h2:mem:testdb"
-    driver-class-name: org.h2.Driver
+    username: "root"
+    password: "wagg249"
+    url: "jdbc:mysql://localhost:3306/users"
   jackson:
     serialization:
       INDENT_OUTPUT: true
